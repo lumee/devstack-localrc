@@ -1,4 +1,4 @@
-# 3 network adapters required
+# Network
 # eth0: management
 # eth1: guest data
 # eth2: public
