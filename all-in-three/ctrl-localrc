@@ -1,0 +1,24 @@
+#This setup needs two network cards
+
+API_RATE_LIMIT=False
+
+HOST_IP=192.168.209.196
+MULTI_HOST=True
+disable_service n-net
+disable_service n-cpu
+enable_service q-svc
+enable_service neutron
+ENABLE_TENANT_VLANS=True
+TENANT_VLAN_RANGE=2000:3000
+PHYSICAL_NETWORK=physnet1
+
+SERVICE_TOKEN=Passw0rd
+SERVICE_PASSWORD=Passw0rd
+ADMIN_PASSWORD=Passw0rd
+
+SCREEN_LOGDIR=$DEST/logs/screen
+
+#Due to a devstack bug, in /etc/nova/nova.conf add:
+#service_quantum_metadata_proxy = True
+#kill nova-api and restart it in a separate console with:
+#python /opt/stack/nova/bin/nova-api
