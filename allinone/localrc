@@ -1,0 +1,24 @@
+#This setup needs two network cards
+
+#to be modified  with the current ip
+HOST_IP=192.168.1.104 
+
+API_RATE_LIMIT=False
+VOLUME_GROUP="stack-volumes"
+VOLUME_NAME_PREFIX="volume-"
+
+#max volume total size
+VOLUME_BACKING_FILE_SIZE=50000M
+
+#floating ranges - http://jodies.de/ipcalc
+FLOATING_RANGE=192.168.1.224/27   
+FIXED_RANGE=10.11.12.0/24        
+FIXED_NETWORK_SIZE=256
+FLAT_INTERFACE=eth0
+PRIVATE_NETWORK_NAME=eth1
+PUBLIC_NETWORK_NAME=eth0
+
+ADMIN_PASSWORD=Passw0rd
+MYSQL_PASSWORD=Passw0rd
+RABBIT_PASSWORD=Passw0rd
+SERVICE_PASSWORD=Passw0rd
