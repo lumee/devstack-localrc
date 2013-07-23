@@ -1,3 +1,13 @@
+# Network
+# eth0: management
+# eth1: guest data
+# eth2: public
+#
+# After ./stack.sh, make sure that eth1 and eth2 are properly setup in OVS:
+# sudo ovs-vsctl add-br br-eth1
+# sudo ovs-vsctl add-port br-eth1 eth1
+# sudo ovs-vsctl add-port br-ex eth2
+
 # Set this to your management IP
 HOST_IP=x.y.z.w
 
