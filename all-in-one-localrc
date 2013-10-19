@@ -20,11 +20,11 @@ enable_service q-dhcp
 enable_service q-l3
 enable_service q-meta
 enable_service neutron
-# Comment to enable Horizon
-disable_service horizon
+# Uncomment to disable Horizon
+#disable_service horizon
 
 disable_service n-net
-disable_service n-cpu
+#disable_service n-cpu
 
 # Uncomment if you need tempest
 #enable_service tempest
