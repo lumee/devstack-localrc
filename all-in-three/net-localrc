@@ -9,6 +9,7 @@
 # sudo ovs-vsctl add-port br-ex eth2
 
 HOST_IP=192.168.209.196
+Q_PLUGIN=openvswitch
 ENABLED_SERVICES=q-agt,q-dhcp,q-l3,q-meta
 SERVICE_HOST=192.168.209.195
 SCREEN_LOGDIR=$DEST/logs/screen
