@@ -32,6 +32,7 @@ disable_service n-net
 # Uncomment if you need tempest
 #enable_service tempest
 
+Q_PLUGIN=openvswitch
 ENABLE_TENANT_VLANS=True
 TENANT_VLAN_RANGE=2000:3000
 PHYSICAL_NETWORK=physnet1
