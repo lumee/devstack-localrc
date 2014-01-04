@@ -4,6 +4,7 @@
 # For networks and floating ip configuration run:
 # https://github.com/cloudbase/openstack-dev-scripts/blob/master/quantum-create-networks.sh
 
+Q_PLUGIN=openvswitch
 API_RATE_LIMIT=False
 ENABLE_TENANT_VLANS=True
 MULTI_HOST=True
