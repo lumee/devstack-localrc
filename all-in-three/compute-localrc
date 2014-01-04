@@ -9,6 +9,7 @@
 # passed to the VM.
 
 HOST_IP=192.168.209.197
+Q_PLUGIN=openvswitch
 ENABLED_SERVICES=n-cpu,quantum,q-agt,n-novnc,n-xvnc,n-cauth,ceilometer-acompute
 SERVICE_HOST=192.168.209.195
 LIBVIRT_TYPE=kvm
