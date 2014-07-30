@@ -32,9 +32,14 @@ disable_service n-net
 # Uncomment if you need tempest
 #enable_service tempest
 
-Q_PLUGIN=openvswitch
+Q_PLUGIN=ml2
+ENABLE_TENANT_TUNNELS=True
+TENANT_TUNNEL_RANGE=50:100
+ML2_VLAN_RANGES=physnet1:100:200
+
+
 ENABLE_TENANT_VLANS=True
-TENANT_VLAN_RANGE=2000:3000
+#TENANT_VLAN_RANGE=2000:3000
 PHYSICAL_NETWORK=physnet1
 OVS_ENABLE_TUNNELING=False
 OVS_BRIDGE_MAPPINGS=physnet1:br-eth1
